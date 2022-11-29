@@ -55,6 +55,7 @@ export default function Home() {
 
   return (
     <div className="text-neutral-300 inline-block p-4">
+      <button className="bg-tomato-3 text-tomato-11">Buttonsd</button>
       <form onSubmit={(e) => handleAdd(e)}>
         <input className="border w-full min-w-0 bg-black px-2 py-1" type='number' onChange={(e) => setAge(parseInt(e.target.value))} />
         <input className="border w-full min-w-0 bg-black px-2 py-1" type="text" value={name} onChange={(e) => setName(e.target.value)} />
