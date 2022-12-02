@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -20,15 +19,15 @@
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-redux": "^8.0.5",
     "typescript": "4.9.3",
-    "use-immer": "^0.8.1"
+    "use-immer": "^0.8.1",
+    "zustand": "^4.1.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.28.1",
     "@radix-ui/colors": "^0.1.8",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
-    "tailwindcss": "^3.2.4",
-    "windy-radix-palette": "^0.3.0"
+    "tailwindcss": "^3.2.4"
   }
 }

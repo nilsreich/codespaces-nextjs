@@ -27,15 +27,15 @@ export default function Home() {
   const handleAdd = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    (name && age)?
-    dispatch({
-      type: "ADD",
-      payload: {
-        name: name,
-        age: age
-      }
-    }): alert("Please fill all the fields")
-  
+    (name && age) ?
+      dispatch({
+        type: "ADD",
+        payload: {
+          name: name,
+          age: age
+        }
+      }) : alert("Please fill all the fields")
+
     setName("");
 
   };
@@ -54,7 +54,10 @@ export default function Home() {
 
 
   return (
-    <div className="text-neutral-300 inline-block p-4">
+    <div className="text-neutral-300">
+      <div className="bg-pale-sky-900 h-screen p-20 text-tomato-50">
+        <div className="font-noto bg-black p-20 text-6xl">Hslasd</div>
+      </div>
       <button className="bg-tomato-3 text-tomato-11">Buttonsd</button>
       <form onSubmit={(e) => handleAdd(e)}>
         <input className="border w-full min-w-0 bg-black px-2 py-1" type='number' onChange={(e) => setAge(parseInt(e.target.value))} />
